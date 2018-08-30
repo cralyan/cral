@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'/>
+	<title>login</title>
+	<style>
+		*{margin:0px;padding:0px}
+		#main{
+			margin:200px auto;
+			width:40%;
+			height:500px;
+			/* background:#00cc66; */
+		}
+		/* .fo{
+			margin:55px 200px;
+		}
+		.submit{
+			margin:-30px 250px;
+		} */
+	</style>
+</head>
+<body>
+	<div id='main'>
+		<form method='post' action='/login' id='form'>
+			<div class='fo' align='center'>
+				<label>Username: <input style='height:21px' name='user'/></label>
+			</div>
+			<div class='fo' align='center'>
+				{{msg}}
+				</br><label>Password: <input style='height:21px' name='pwd' type='password'/></label>
+			</div>
+			<div class='submit' align='center'>
+				</br><button type='submit'><font style='font-size: 18px; color:#3333ff; '>&nbsp&nbsp Submit&nbsp&nbsp</font></button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
